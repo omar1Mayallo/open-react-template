@@ -1,0 +1,19 @@
+@use "../variables" as *;
+header {
+  .nav-btn {
+    background-color: $appEntity-color;
+    border: none;
+    &:hover {
+      background-color: darken($color: $appEntity-color, $amount: 20%);
+    }
+    .nav-btn-icon {
+      margin-bottom: 3px;
+      font-size: 20px;
+    }
+  }
+  .navbar-toggler {
+    .nav-toggle-icon {
+      color: $txt-main-color;
+    }
+  }
+}

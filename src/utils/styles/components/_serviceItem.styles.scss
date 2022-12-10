@@ -1,0 +1,37 @@
+@use "../variables" as *;
+.service-card {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 20px;
+  .service-icon-circle {
+    margin: 15px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid $appEntity-color;
+    background-color: $appEntity-color;
+    border-radius: 100%;
+    width: 70px;
+    height: 70px;
+    &:hover {
+      background-color: transparent;
+      svg {
+        color: $appEntity-color;
+      }
+    }
+    svg {
+      color: $txt-head-color;
+      font-size: 28px;
+    }
+  }
+  .service-info {
+    h3 {
+      font-weight: 800;
+      color: $txt-head-color;
+      font-size: 25px;
+    }
+    p {
+      font-size: calc($txt-font-size - 3px);
+      color: $txt-main-color;
+    }
+  }
+}

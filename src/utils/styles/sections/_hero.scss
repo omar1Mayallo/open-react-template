@@ -1,0 +1,25 @@
+@use "../variables" as *;
+@use "../components/_head.styles" as *;
+.hero-section {
+  .hero-btn-container {
+    button {
+      font-weight: 600;
+      margin-inline: 5px;
+      border-radius: 0;
+      padding: 12px 30px;
+      border: none;
+      &:nth-of-type(1) {
+        background-color: $appEntity-color;
+        &:hover {
+          background-color: lighten($color: $appEntity-color, $amount: 5);
+        }
+      }
+      &:nth-of-type(2) {
+        background-color: $dark-color;
+        &:hover {
+          background-color: lighten($color: $dark-color, $amount: 5);
+        }
+      }
+    }
+  }
+}

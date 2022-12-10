@@ -1,0 +1,26 @@
+@use "../variables" as *;
+.workflow-item {
+  &.reverse {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .workflow-info {
+    @media (max-width: 767px) {
+      text-align: center;
+    }
+    p {
+      &:first-of-type {
+        color: $appEntity-color;
+        font-weight: 500;
+      }
+      &:last-of-type {
+        color: $txt-main-color;
+        font-size: $txt-font-size;
+      }
+    }
+    h3 {
+      color: $txt-head-color;
+      font-weight: 800;
+    }
+  }
+}

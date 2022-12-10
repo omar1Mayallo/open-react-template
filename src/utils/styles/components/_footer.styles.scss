@@ -1,0 +1,15 @@
+@use "../variables" as *;
+footer {
+  .social-list-item {
+    svg {
+      &:hover {
+        color: $appEntity-color;
+      }
+    }
+  }
+  .footer-note {
+    color: gray;
+    font-size: 14px;
+    font-weight: 200;
+  }
+}

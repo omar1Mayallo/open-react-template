@@ -1,0 +1,23 @@
+@use "../variables" as *;
+.testimonial-item {
+  background-color: $dark-color;
+  padding: 40px;
+  p {
+    color: $txt-main-color;
+    font-size: calc($txt-font-size - 2px);
+  }
+  svg {
+    color: $appEntity-color;
+  }
+  .testimonial-person-project {
+    span {
+      font-weight: 700;
+      &:first-of-type {
+        color: $txt-head-color;
+      }
+      &:last-of-type {
+        color: #1cb68b;
+      }
+    }
+  }
+}

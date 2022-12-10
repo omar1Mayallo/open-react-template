@@ -1,0 +1,47 @@
+@use "../variables" as *;
+.subscribe-section {
+  .subs-container {
+    padding: 60px;
+    background-color: $appEntity-color;
+    .subs-content {
+      display: flex;
+      align-items: center;
+      @media (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      @media (max-width: 767px) {
+        flex-direction: column;
+        text-align: center;
+      }
+      p {
+        font-size: 35px;
+        font-weight: 700;
+        color: $txt-head-color;
+      }
+      .input-block {
+        width: fit-content;
+        position: relative;
+        input {
+          padding: 10px;
+          border: none;
+          &:focus {
+            outline: none;
+          }
+        }
+        button {
+          top: 50%;
+          right: 3%;
+          transform: translate(-3%, -50%);
+          position: absolute;
+          border: none;
+          background: white;
+          svg {
+            font-size: 25px;
+            color: $appEntity-color;
+          }
+        }
+      }
+    }
+  }
+}
